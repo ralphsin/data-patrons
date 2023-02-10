@@ -19,9 +19,9 @@ from flask import render_template
 # Custom library
 from source import app
 
-# Defining the decorators, which binds the URLs "/" and "/index" to this function
+# Defining the decorators, which binds the URLs "/" and "/home" to this function
 @app.route("/")
-@app.route("/index")
+@app.route("/home")
 def index():
     """
     summary: This function captures the web browser requests for either of these two URLs and going to
@@ -65,7 +65,7 @@ def courses():
     Returns:
         html: courses.html page from templates directory
     """
-    return render_template('courses.html')
+    return render_template('courses.html', title="Courses")
 
 # Defining the decorators, which binds the URL "/about" to this function
 @app.route("/about")
@@ -77,4 +77,4 @@ def about():
     Returns:
         html: about.html page from templates directory
     """
-    return render_template('about.html')
+    return render_template('about.html', title="About")
