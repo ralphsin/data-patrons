@@ -32,7 +32,7 @@ scss = Bundle(
         'assets/main.scss',
         filters='libsass',
         depends='**/*.scss',
-        output='css/scss-generated.%(version)s.css')
+        output='assets/css/scss-generated.%(version)s.css')
 # Registering the generated css file, to be used in Jinja templates
 assets.register("scss_all", scss)
 

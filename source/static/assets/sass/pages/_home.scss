@@ -1,1 +1,7 @@
-.navbar-brand{color: $color;}
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to right,
+    rgba(145, 113, 115, 0.50), rgba(42, 59, 54, 0.60), rgba(67, 44, 82, 0.60)), url('../images/hero-img-4.png');
+    background-size: cover;
+    background-position: center;
+}

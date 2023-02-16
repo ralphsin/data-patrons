@@ -8358,5 +8358,25 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.navbar-brand {
-  color: orange; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(145, 113, 115, 0.8), rgba(42, 59, 54, 0.8), rgba(67, 44, 82, 0.8)), url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: center; }
